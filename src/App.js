@@ -1,15 +1,16 @@
 import React from "react";
-import Counter from "./components/Counter";
+import PostItem from "./components/PostItem";
+
+import './stales/App.css'
 
 function App() {
 
   return (
     <div className="App">
-      <Counter/>
-      <Counter/>
-      <Counter/>
-      <Counter/>
-
+      <PostItem/>
+      <PostItem/>
+      <PostItem/>
+      <PostItem/>
     </div>
   );
 }
