@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useMemo, useState} from "react";
 import PostForm from "./components/PostForm";
 import MySelect from "./components/UI/MySelect";
 import MyInput from "./components/UI/input/MyInput";
@@ -14,20 +14,19 @@ function App() {
       {id: 3, title: 'javascript3', body: 'discription' },
     ]
   )
-
   const [selectedSort, setSelectedSort] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
 
-  function getSortedPosts () {
+
+
+  const sortedPosts = useMemo(()=> {
     if(selectedSort) {
       console.log('nen')
       return [...posts].sort((a, b)=> a[selectedSort].localeCompare(b[selectedSort]));
     } else {
       return posts;
     }
-  }
-
-  const sortedPosts = getSortedPosts();
+  }, [selectedSort, posts]);
 
   const createPost = (newPost) => {
     setPosts([...posts, newPost])
