@@ -5,6 +5,8 @@ import PostForm from "./components/PostForm";
 import './stales/App.css'
 import PostList from "./components/PostList";
 import PostFilter from "./components/PostFilter";
+import MyModal from "./components/UI/MyModal/MyModal";
+import MyButton from "./components/UI/button/MyButton";
 
 function App() {
 
@@ -15,7 +17,8 @@ function App() {
     ]
   )
 
-  const [filter, setFilter] = useState({sort: '', query: ''})
+  const [filter, setFilter] = useState({sort: '', query: ''});
+  const [modal, setModal] = useState(false);
 
 
 
@@ -33,6 +36,7 @@ function App() {
 
   const createPost = (newPost) => {
     setPosts([...posts, newPost])
+    setModal(false);
   }
 
   const removePost = (post) => {
@@ -41,7 +45,11 @@ function App() {
 
   return (
     <div className="App">
-      <PostForm create={createPost}></PostForm>
+
+      <MyButton style={{marginTop: 30}} onClick={()=>setModal(true)}>
+        Открыть модальное окно
+      </MyButton>
+
 
       <hr style = {{margin: '15px 0'}}></hr>
 
@@ -51,6 +59,10 @@ function App() {
       ></PostFilter>
 
       <PostList remove={removePost} posts={sortedAndSearchPosts} title='Список постов'/>
+
+      <MyModal visible={modal} setVisible={setModal}>
+          <PostForm create={createPost}></PostForm>
+      </MyModal>
     </div>
   );
 }
