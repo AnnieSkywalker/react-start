@@ -1,7 +1,6 @@
 import React, {useMemo, useState} from "react";
 import PostForm from "./components/PostForm";
-import MySelect from "./components/UI/MySelect";
-import MyInput from "./components/UI/input/MyInput";
+
 
 import './stales/App.css'
 import PostList from "./components/PostList";
@@ -15,8 +14,6 @@ function App() {
       {id: 3, title: 'javascript3', body: 'discription' },
     ]
   )
-  // const [selectedSort, setSelectedSort] = useState('');
-  // const [searchQuery, setSearchQuery] = useState('');
 
   const [filter, setFilter] = useState({sort: '', query: ''})
 
@@ -24,7 +21,6 @@ function App() {
 
   const sortedPosts = useMemo(()=> {
     if(filter.sort) {
-      console.log('nen')
       return [...posts].sort((a, b)=> a[filter.sort].localeCompare(b[filter.sort]));
     } else {
       return posts;
@@ -54,16 +50,7 @@ function App() {
         setFilter={setFilter}
       ></PostFilter>
 
-      {
-      sortedAndSearchPosts.length !== 0
-      ?
-       <PostList remove={removePost} posts={sortedAndSearchPosts} title='Список постов'/>
-      :
-        <h1 style={{textAlign: 'center'}}>
-          Посты не найдены!
-        </h1>
-      }
-
+      <PostList remove={removePost} posts={sortedAndSearchPosts} title='Список постов'/>
     </div>
   );
 }
