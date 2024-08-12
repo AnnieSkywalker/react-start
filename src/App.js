@@ -28,6 +28,10 @@ function App() {
     }
   }, [selectedSort, posts]);
 
+  const sortedAndSearchPosts = useMemo(() => {
+    return sortedPosts.filter(post => post.title.toLowerCase().includes(searchQuery))
+  }, [searchQuery, sortedPosts])
+
   const createPost = (newPost) => {
     setPosts([...posts, newPost])
   }
@@ -49,7 +53,6 @@ function App() {
           value={searchQuery}
           onChange={e => setSearchQuery(e.target.value)}
           placeholder='Поиск...'
-
         ></MyInput>
         <MySelect
           defaultValue='Сортировка'
@@ -63,9 +66,9 @@ function App() {
         </MySelect>
       </div>
       {
-      posts.length !== 0
+      sortedAndSearchPosts.length !== 0
       ?
-       <PostList remove={removePost} posts={sortedPosts} title='Список постов'/>
+       <PostList remove={removePost} posts={sortedAndSearchPosts} title='Список постов'/>
       :
         <h1 style={{textAlign: 'center'}}>
           Посты не найдены!
