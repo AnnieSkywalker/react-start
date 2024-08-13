@@ -9,6 +9,7 @@ import MyButton from "./components/UI/button/MyButton";
 import { usePosts } from "./hooks/usePosts";
 import PostService from "./API/PostService";
 import Loader from "./components/UI/loader/Loader";
+import {useFetching} from "./hooks/useFetching"
 
 function App() {
 
@@ -16,23 +17,20 @@ function App() {
   const [filter, setFilter] = useState({sort: '', query: ''});
   const [modal, setModal] = useState(false);
   const sortedAndSearchPosts = usePosts(posts, filter.sort, filter.query);
-  const [isPostsLoading, setIsPostsLoading] = useState(false);
+  const [fetchPosts, isPostsLoading, postError] = useFetching(async () => {
+  const posts = await PostService.getAll();
+    setPosts(posts);
+  })
 
   useEffect(()=>{
-    fetchPost();
+    fetchPosts();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const createPost = (newPost) => {
     setPosts([...posts, newPost])
     setModal(false);
-  }
-
-  async function fetchPost () {
-    setIsPostsLoading(true);
-    const posts = await PostService.getAll();
-    setPosts(posts);
-    setIsPostsLoading(false);
-
   }
 
   const removePost = (post) => {
@@ -53,6 +51,8 @@ function App() {
         filter={filter}
         setFilter={setFilter}
       ></PostFilter>
+
+      {postError && <h1>Произошла ошибка ${postError}</h1>}
 
       {isPostsLoading ? <div style={{display: 'flex', justifyContent: 'center', marginTop: 50}}><Loader/></div> : <PostList remove={removePost} posts={sortedAndSearchPosts} title='Список постов'/>}
 
