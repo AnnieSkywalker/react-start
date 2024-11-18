@@ -1,5 +1,6 @@
 import About from 'Pages/About'
 import Error from 'Pages/Error'
+import PostPage from 'Pages/PostPage'
 import Posts from 'Pages/Posts'
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
@@ -11,6 +12,8 @@ function AppRouter() {
         <Route path='/about' element={<About />}>
         </Route>
         <Route path='/posts' element={<Posts />}>
+        </Route>
+        <Route path='/posts/:id' element={<PostPage/>}>
         </Route>
         <Route path='/error' element={<Error />}>
         </Route>
