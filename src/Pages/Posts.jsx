@@ -58,8 +58,6 @@ function Posts() {
                 Открыть модальное окно
             </MyButton>
 
-            <hr style={{ margin: '15px 0' }}></hr>
-
             <PostFilter filter={filter} setFilter={setFilter}></PostFilter>
 
             {postError && <h1>Произошла ошибка ${postError}</h1>}

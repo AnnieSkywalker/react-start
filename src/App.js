@@ -14,6 +14,7 @@ function App() {
                 <img className ="header__image" src="" alt="Логотип" />
                 <Navbar />
             </header>
+            <hr style={{ margin: '15px 0' }}></hr>
             <main className='content'>
                 <AppRouter />
             </main>
