@@ -7,9 +7,9 @@ const Pagination = ({totalPages, page, changePage }) => {
   let pagesArray = getPagesArray(totalPages);
 
   return (
-    <div className="page__wrapper">
+    <div className="pagination">
       {pagesArray.map(p =>
-        <span onClick={() => changePage(p)} key={p} className={p === page? 'page page__current' : 'page'}>{p}</span>
+        <span onClick={() => changePage(p)} key={p} className={p === page? 'pagination__page pagination__page_current' : 'pagination__page'}>{p}</span>
       )}
     </div>
 

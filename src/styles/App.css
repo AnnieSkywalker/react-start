@@ -22,6 +22,9 @@
 @import url(./blocks/post/__body/post__body.css);
 @import url(./blocks/post/_btn/post__btn.css);
 
+@import url(./blocks/pagination/pagination.css);
+@import url(./blocks/pagination/__page/pagination__page.css);
+
 @import url(./blocks/footer/__copyright/footer__copyright.css);
 
 
