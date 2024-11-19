@@ -10,10 +10,12 @@ const PostItem = function (props) {
     <div className="post">
 
       <div className="post__content">
-        <strong>{props.post.id}. {props.post.title}</strong>
-        <div>
-          {props.post.body}
+        <span className="post__id">{props.post.id}</span>
+        <div className="post__wrap">
+          <h3 className="post__title">{props.post.title}</h3>
+          <p className="post__body">{props.post.body}</p>
         </div>
+        
       </div>
       <div className="post__btn">
         <MyButton onClick = {()=> {navigate(`/posts/${props.post.id}`)}}>Открыть</MyButton> 

@@ -13,7 +13,6 @@ function PostPage() {
 
 	});
 
-
 	useEffect(() => {
 		fetchPostById(params.id);
 	}, [])

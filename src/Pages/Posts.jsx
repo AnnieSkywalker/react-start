@@ -15,7 +15,6 @@ import { getPageCount } from 'utils/pages';
 import { useFetching } from 'hooks/useFetching';
 import { usePosts } from 'hooks/usePosts';
 
-import 'stales/App.css';
 
 function Posts() {
     const [posts, setPosts] = useState([]);

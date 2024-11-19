@@ -1,0 +1,135 @@
+/* # {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+} */
+
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+
+@import url(./blocks/post/post.css);
+@import url(./blocks/post/__content/post__content.css);
+@import url(./blocks/post/__id/post__id.css);
+@import url(./blocks/post/__wrap/post__wrap.css);
+@import url(./blocks/post/__title/post__title.css);
+@import url(./blocks/post/__body/post__body.css);
+@import url(./blocks/post/_btn/post__btn.css);
+
+.page {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  background-color: #1E1E1E;
+  color: #fff;
+  display: flex;
+  font-family: Inter,Arial,sans-serif;
+  justify-content: center;
+  text-rendering: optimizeLegibility;
+}
+
+.wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  box-sizing: border-box;
+  max-width: 918px;
+  padding: 45px 19px 0;
+  width: 100%;
+}
+
+.header__image {
+  display: block;
+  height: 33px;
+  padding-bottom: 40px;
+  width: 142px;
+}
+
+.navbar {
+  height: 50px;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.post__add-button {
+  align-self: center;
+  background: none;
+  /* background-image: url(d86bb2edc2f6eadb96b7.svg); */
+  /* background-position: 50%;
+  background-repeat: no-repeat; */
+  background-color: #E50000;
+  border: 2px solid #E50000;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 50px;
+  min-width: 150px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  padding: 0;
+}
+
+
+.App {
+  width: 800px;
+}
+
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+
+
+.post-enter {
+  transform: translateX(-350px);
+}
+.post-enter-active {
+  transform: translateX(0px);
+  transition: all 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  transform: translateX(-350px);
+  transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+  margin-top: 30px;
+  display: flex;
+}
+
+/* .page {
+  padding: 10px;
+  border: 1px solid teal;
+  cursor: pointer;
+} */
+
+.page__current {
+  border: 2px solid orange;
+  font-weight: bold;
+}
+
+
+
+.navbar__links {
+  margin-left: auto;
+
+}
