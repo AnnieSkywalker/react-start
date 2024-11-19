@@ -3,9 +3,14 @@ import classes from "./MyButton.module.css";
 
 const MyButton = function ({children, ...props}) {
   
-  const cl = (children === 'Удалить')
-      ? classes.del
-      : classes.open
+  let cl = '';
+  if (children === 'Удалить'){
+    cl = classes.del;
+  } else if (children === 'Открыть') {
+    cl = classes.open;
+  } else if (children === ' ') {
+    cl = classes.add;
+  }
 
   return(
     <button {...props} className={[classes.myBtn, cl].join(' ')}>

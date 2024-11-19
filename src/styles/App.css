@@ -20,12 +20,12 @@
 @import url(./blocks/post/_btn/post__btn.css);
 
 
-.post__add-button {
+/* .post__add-button {
   align-self: center;
   background: none;
-  /* background-image: url(d86bb2edc2f6eadb96b7.svg); */
-  /* background-position: 50%;
-  background-repeat: no-repeat; */
+  background-image: url(d86bb2edc2f6eadb96b7.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
   background-color: #E50000;
   border: 2px solid #E50000;
   border-radius: 2px;
@@ -35,7 +35,7 @@
   -o-object-fit: cover;
   object-fit: cover;
   padding: 0;
-}
+} */
 
 
 .remove-btn {
