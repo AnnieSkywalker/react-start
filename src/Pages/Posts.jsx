@@ -54,9 +54,11 @@ function Posts() {
 
     return (
         <div className='App'>
-            <MyButton style={{ marginTop: 30 }} onClick={() => setModal(true)}> </MyButton>
+            <section className='management'>
+                <MyButton onClick={() => setModal(true)}> </MyButton>
 
-            <PostFilter filter={filter} setFilter={setFilter}></PostFilter>
+                <PostFilter filter={filter} setFilter={setFilter}></PostFilter>
+            </section>
 
             {postError && <h1>Произошла ошибка ${postError}</h1>}
 
@@ -64,6 +66,7 @@ function Posts() {
                 ? (<div style={{ display: 'flex', justifyContent: 'center', marginTop: 50 }}><Loader /></div>) 
                 : (<PostList remove={removePost} posts={sortedAndSearchPosts} title='Список постов' />)
             }
+            
 
             <Pagination page={page} totalPages={totalPages} changePage={changePage}></Pagination>
 
