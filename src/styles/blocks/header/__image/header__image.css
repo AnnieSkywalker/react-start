@@ -1,5 +1,14 @@
 .header__image {
 	display: block;
 	height: 55px;
+	padding: 20px;
+}
+
+@media screen and (max-width: 767px)  {
+	.header__image {
+		height: 24px;
+		padding: 15px;
+		padding-left: 27px;
+	}
 }
  
