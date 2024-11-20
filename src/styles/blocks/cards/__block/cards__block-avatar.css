@@ -1,0 +1,11 @@
+.cards__block-avatar {
+	width: 429px;
+	height: 566px;
+}
+
+@media screen and (max-width: 767px)  {
+	.cards__block-avatar {
+		width: 380px;
+		height: 450px;
+  	}
+}

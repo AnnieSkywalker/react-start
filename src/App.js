@@ -6,9 +6,6 @@ import { BrowserRouter } from 'react-router-dom';
 import logo from './images/cat.svg'
 import 'styles/App.css';
 
-
-
-
 function App() {
     return <div>
         <BrowserRouter>
