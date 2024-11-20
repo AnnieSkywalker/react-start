@@ -24,6 +24,7 @@
 
 .myBtn.add {
 	padding: 0;
+	max-width: 875px;
 	min-width: 150px;
 	height: 50px;
 	background: none;
