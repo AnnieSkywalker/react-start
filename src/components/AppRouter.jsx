@@ -1,7 +1,7 @@
-import About from 'Pages/About'
-import Error from 'Pages/Error'
-import PostPage from 'Pages/PostPage'
-import Posts from 'Pages/Posts'
+import About from '../Pages/About'
+import Error from '../Pages/Error'
+import PostPage from '../Pages/PostPage'
+import Posts from '../Pages/Posts'
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 
