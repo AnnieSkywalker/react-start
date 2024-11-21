@@ -3,6 +3,7 @@ import Navbar from './components/UI/navbar/Navbar';
 import Footer from './components/UI/footer/Footer';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import Logo from './images/Logo.svg'
 
 import './styles/App.css';
 
@@ -11,7 +12,7 @@ function App() {
         <BrowserRouter>
             <header className='header'>
                 <div className='header__content'>
-                    <img className ="header__image" src={logo} alt="Логотип" />
+                    <img className ="header__image" src={Logo} alt="Логотип" />
                     <Navbar />
                 </div>
 
