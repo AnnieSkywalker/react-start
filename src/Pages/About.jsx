@@ -18,13 +18,13 @@ function About() {
                     <div className="cards__wrapper">
                         <a href="https://github.com/AnnieSkywalker/" className="cards__link" target="_blank" rel="noopener noreferrer">
                             <img className="cards__image" src={github} alt="Иконка github" />
-                            <p className="cards__description">AnnieSkywalker</p>
+                            <p className="cards__description">Annie Skywalker</p>
                         </a>
                     </div>
                     <div className="cards__wrapper">
                         <a href="https://vk.com/spirridonov" className="cards__link" target="_blank" rel="noopener noreferrer">
                             <img className="cards__image" src={vk} alt="Иконка github" />
-                            <p className="cards__description">AnnieSkywalker</p>
+                            <p className="cards__description">Spiridonov Andrey</p>
                         </a>
                     </div>
                     <div className="cards__wrapper">

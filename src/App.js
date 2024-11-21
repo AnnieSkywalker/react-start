@@ -15,7 +15,6 @@ function App() {
                     <img className ="header__image" src={Logo} alt="Логотип" />
                     <Navbar />
                 </div>
-
             </header>
             <main className='content'>
                 <AppRouter />
