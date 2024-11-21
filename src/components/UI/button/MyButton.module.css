@@ -32,13 +32,13 @@
 	object-fit: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	border: 2px solid #E50000;
+	border: 2px solid #ff3333;
 	border-radius: 2px;
 	cursor: pointer;
 }
 
 .myBtn.open {
-background: #e60000;
+background: #ff3333;
 border-radius: 8px;
 }
 
