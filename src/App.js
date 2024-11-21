@@ -3,7 +3,7 @@ import Navbar from './components/UI/navbar/Navbar';
 import Footer from './components/UI/footer/Footer';
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import logo from './images/cat.svg'
+
 import './styles/App.css';
 
 function App() {

@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>Pet-Project</title>
-  </head>
-  <body class='page'>
-    <?xml version="1.0" standalone="no"?>
+<?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +60,7 @@ m625 -89 c199 -41 292 -76 387 -144 80 -58 131 -130 161 -228 21 -69 21 -96 2
 m2415 -1 c323 -59 448 -132 510 -297 34 -91 53 -224 53 -383 2 -266 -56 -432
 -198 -575 -83 -83 -189 -141 -325 -176 -61 -15 -244 -39 -305 -39 -139 0 -297
 35 -420 95 -268 130 -436 395 -510 805 -21 118 -12 182 42 288 41 83 94 135
-181 180 82 42 235 92 285 93 18 0 59 7 92 14 73 18 493 14 595 -5z" fill="#fff"/>
+181 180 82 42 235 92 285 93 18 0 59 7 92 14 73 18 493 14 595 -5z" fill="fff"/>
 <path d="M2967 3884 c-4 -4 -4 -39 -1 -78 6 -69 5 -72 -29 -123 -30 -44 -33
 -53 -18 -53 56 0 111 -48 111 -98 0 -33 -53 -82 -89 -82 -83 0 -118 58 -85
 143 4 12 -3 14 -40 10 -50 -6 -93 7 -143 44 -17 12 -38 23 -46 23 -23 0 -47
@@ -92,8 +82,3 @@ m2415 -1 c323 -59 448 -132 510 -297 34 -91 53 -224 53 -383 2 -266 -56 -432
 -53 43 -53 21z"/>
 </g>
 </svg>
-        <div id="root" class="wrapper">
-
-        </div>
-  </body>
-</html>
