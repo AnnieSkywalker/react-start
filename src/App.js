@@ -10,13 +10,13 @@ import './styles/App.css';
 function App() {
     return <div>
         <BrowserRouter>
-            <header className='header'>
+            <header id='header' className='header'>
                 <div className='header__content'>
                     <img className ="header__image" src={Logo} alt="Логотип" />
                     <Navbar />
                 </div>
             </header>
-            <main className='content'>
+            <main id='main' className='content'>
                 <AppRouter />
             </main>
             <Footer>

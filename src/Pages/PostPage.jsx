@@ -9,21 +9,31 @@ function PostPage() {
 	let [post, setPost] = useState({});
 	const [fetchPostById, isLoading, error] = useFetching(async (id) => {
 		const response = await PostService.getById(id);
-		setPost(response.data)
+		console.log(response);
+		setPost(response.data);
 
 	});
 
 	useEffect(() => {
+		console.log(params);
 		fetchPostById(params.id);
 	}, [])
 
   return (
 	
-	<div>
-		<h1>вы открыли страницу поста c ID {params.id}</h1>
+	<div className='post-page'>
+		<h2 className='post-page__id'>Пост {params.id}</h2>
 		{isLoading
 			? <Loader />
-			: <div>{post.id}. {post.title}</div>
+			:
+			(<div className='post'>
+				<div className="post__content">
+					<div className="post__wrap">
+						<h3 className="post-page__title post__title">{post.title}</h3>
+						<p className="post-page__body post__body">{post.body}</p>
+					</div>
+				</div>
+			</div>)
 		}
 	</div>
   )
