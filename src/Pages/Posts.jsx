@@ -14,7 +14,7 @@ import { getPageCount } from '../utils/pages';
 
 import { useFetching } from '../hooks/useFetching';
 import { usePosts } from '../hooks/usePosts';
-import StubError from 'components/UI/stubError/StubError';
+import StubError from '../components/UI/stubError/StubError';
 
 
 function Posts() {
