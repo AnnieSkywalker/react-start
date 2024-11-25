@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { alpha, styled } from '../../../../node_modules/@mui/material/styles';
-import Switch from '../../../../node_modules/@mui/material/Switch' ;
+import { alpha, styled } from '@mui/material/styles';
+import Switch from '@mui/material/Switch';
 import { AuthContext } from '../../../context/context';
-import { pink } from '../../../../node_modules/@mui/material/colors';
+import { pink } from '@mui/material/colors';
 
 function Navbar() {
   // const label = { inputProps: { 'aria-label': 'Switch demo' } };
