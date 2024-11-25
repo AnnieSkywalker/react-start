@@ -1,7 +1,7 @@
 import Error from '../Pages/Error'
 import React, { useContext } from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { publicRoutes, privateRoutes } from 'router/routes'
+import { publicRoutes, privateRoutes } from './../router/routes'
 import Login from 'Pages/Login'
 import { AuthContext } from './../context/context'
 
