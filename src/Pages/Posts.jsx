@@ -14,6 +14,7 @@ import { getPageCount } from '../utils/pages';
 
 import { useFetching } from '../hooks/useFetching';
 import { usePosts } from '../hooks/usePosts';
+import StubError from 'components/UI/stubError/StubError';
 
 
 function Posts() {
@@ -60,7 +61,7 @@ function Posts() {
                 <PostFilter filter={filter} setFilter={setFilter}></PostFilter>
             </section>
 
-            {postError && <h1>Произошла ошибка ${postError}</h1>}
+            {postError && <StubError postError={postError}>!Произошла ошибка:</StubError>}
 
             {isPostsLoading 
                 ? (<div style={{ display: 'flex', justifyContent: 'center', marginTop: 50 }}><Loader /></div>) 

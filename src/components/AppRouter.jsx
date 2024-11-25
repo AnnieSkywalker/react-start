@@ -1,20 +1,15 @@
-import About from '../Pages/About'
+import Posts from 'Pages/Posts'
 import Error from '../Pages/Error'
-import PostPage from '../Pages/PostPage'
-import Posts from '../Pages/Posts'
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+import { routes } from 'router/routes'
 
 function AppRouter() {
   return (
     <Routes>
-        <Route path="/" element={<Posts />} />
-        <Route path='/about' element={<About />}>
-        </Route>
-        <Route path='/posts' element={<Posts />}>
-        </Route>
-        <Route path='/posts/:id' element={<PostPage/>}>
-        </Route>
+        {routes.map(item => 
+          <Route path={item.path} element={item.element}></Route>
+        )}
         <Route path='/error' element={<Error />}>
         </Route>
         <Route path="*" element={<Navigate to="/error" replace />}/>

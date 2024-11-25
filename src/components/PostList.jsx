@@ -6,9 +6,9 @@ const PostList = function ({posts, title, remove}) {
 
   if(!posts.length) {
     return (
-        <h1 style={{textAlign: 'center'}}>
+        <h3 style={{textAlign: 'center'}}>
             Посты не найдены!
-        </h1>
+        </h3>
             )
   }
 

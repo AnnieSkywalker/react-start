@@ -1,0 +1,14 @@
+.StubError {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+
+	box-sizing: border-box;
+    flex-direction: column;
+    padding: 24px;
+    gap: 10px;
+    background: #4c4c4c;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

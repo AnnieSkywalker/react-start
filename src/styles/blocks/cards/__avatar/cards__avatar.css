@@ -1,12 +1,12 @@
 .cards__avatar {
-    width: 60vh;
+    width: 400px;
 	display: block;
     object-fit: cover;
     object-position: top;
 }
 
-@media screen and (max-width: 767px)  {
+/* @media screen and (max-width: 767px)  {
 	.cards__avatar {
 		width: 70vh;
   	}
-}
+} */
