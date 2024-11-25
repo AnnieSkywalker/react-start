@@ -4,3 +4,7 @@
 	justify-content: flex-end;
 	gap: 5px;
 }
+
+.navbar__links label {
+	border-left: solid 3px #333;
+}
