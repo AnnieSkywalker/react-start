@@ -1,7 +1,7 @@
-import About from "Pages/About";
-import Login from "Pages/Login";
-import PostPage from "Pages/PostPage";
-import Posts from "Pages/Posts";
+import About from "./../Pages/About";
+import Login from "./../Pages/Login";
+import PostPage from "./../Pages/PostPage";
+import Posts from "./../Pages/Posts";
 
 export const privateRoutes =[
 	{path: '/', element: <Posts />},
