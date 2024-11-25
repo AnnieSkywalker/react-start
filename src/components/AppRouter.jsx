@@ -15,8 +15,8 @@ function AppRouter() {
               <Route key={item.path} path={item.path} element={item.element}></Route>
             )}
             {/* <Route path='/error' element={<Error />}>
-            </Route> */}
-            {/* <Route path="*" element={<Navigate to="/error" replace />}/> */}
+            </Route> 
+            <Route path="*" element={<Navigate to="/error" replace />}/> */}
             {/* <Route path="*" element={<Posts/>}/> */}
         </Routes>
       :
@@ -24,10 +24,9 @@ function AppRouter() {
             {publicRoutes.map(item => 
               <Route key={item.path} path={item.path} element={item.element}></Route>
             )}
-            {/* <Route path='/error' element={<Error />}>
-            </Route> */}
-            <Route path="*" element={<Login/>}/>
-            <Route path="*" element={<Navigate to="/error" replace />}/>
+            {/* <Route path='/error' element={<Error />}></Route> */}
+            {/* <Route path="*" element={<Login/>}/>  */}
+            {/* <Route path="*" element={<Navigate to="/error" replace />}/> */}
         </Routes>
   )
 }
