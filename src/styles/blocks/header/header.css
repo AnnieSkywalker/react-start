@@ -1,19 +1,19 @@
 .header {
-	padding: 25px 19px 0;
-	width: 100%;
-	max-width: calc(880px + 38px);
-	box-sizing: border-box;
+    padding: 25px 19px 0;
+    width: 100%;
+    max-width: calc(880px + 38px);
+    box-sizing: border-box;
 }
-  
+
 .header::after {
-	content: '';
-	display: block;
-	width: 100%;
-	border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+    content: '';
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
-  
+
 @media screen and (max-width: 767px)  {
-	.header {
-	  padding: 28px 0 0;
-	}
+    .header {
+        padding: 28px 0 0;
+    }
 }

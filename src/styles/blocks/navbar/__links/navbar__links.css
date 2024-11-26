@@ -1,10 +1,10 @@
 .navbar__links {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	gap: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
 }
 
 .navbar__links .MuiSwitch-root {
-	border-left: solid 3px #333;
+    border-left: solid 3px #333;
 }

@@ -1,11 +1,7 @@
 .techniques {
-  width: 80%;
-  margin: 100px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  /* max-height: 756px;
-  min-height: 600px;
-  height: 100vh; */
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
