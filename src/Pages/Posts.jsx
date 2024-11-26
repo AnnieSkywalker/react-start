@@ -1,21 +1,16 @@
 import React, { useEffect, useState } from 'react';
-
 import PostFilter from '../components/PostFilter';
 import PostForm from '../components/PostForm';
 import PostList from '../components/PostList';
-
 import MyButton from '../components/UI/button/MyButton';
 import Loader from '../components/UI/loader/Loader';
 import MyModal from '../components/UI/MyModal/MyModal';
 import Pagination from '../components/UI/pagination/Pagination';
-
 import PostService from '../API/PostService';
 import { getPageCount } from '../utils/pages';
-
 import { useFetching } from '../hooks/useFetching';
 import { usePosts } from '../hooks/usePosts';
 import StubError from '../components/UI/stubError/StubError';
-
 
 function Posts() {
     const [posts, setPosts] = useState([]);
@@ -57,7 +52,6 @@ function Posts() {
         <div className='App'>
             <section className='management'>
                 <MyButton onClick={() => setModal(true)}> </MyButton>
-
                 <PostFilter filter={filter} setFilter={setFilter}></PostFilter>
             </section>
 
@@ -67,7 +61,6 @@ function Posts() {
                 ? (<div style={{ display: 'flex', justifyContent: 'center', marginTop: 50 }}><Loader /></div>) 
                 : (<PostList remove={removePost} posts={sortedAndSearchPosts} title='Список постов' />)
             }
-            
 
             <Pagination page={page} totalPages={totalPages} changePage={changePage}></Pagination>
 
