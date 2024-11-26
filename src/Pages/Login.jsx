@@ -20,8 +20,8 @@ function Login() {
                 <h2 className="section-title">
                     Регистрация
                 </h2>
-                <MyInput type='text' placeholder='Название поста' disabled ></MyInput>
-                <MyInput type='text' placeholder='Название поста' disabled ></MyInput>
+                <MyInput type='text' placeholder='email' disabled ></MyInput>
+                <MyInput type='text' placeholder='password' disabled ></MyInput>
             </Section>
         </div>
     )
