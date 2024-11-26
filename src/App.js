@@ -1,10 +1,10 @@
-import AppRouter from './components/AppRouter';
-import Navbar from './components/UI/navbar/Navbar';
-import Footer from './components/UI/footer/Footer';
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Logo from './images/Logo.svg'
+import AppRouter from './components/AppRouter';
+import Navbar from './components/Navbar';
+import Footer from './components/UI/footer/Footer';
 import { AuthContext } from './context/context';
+import Logo from './images/Logo.svg';
 
 import './styles/App.css';
 

@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { pink } from '@mui/material/colors';
 import { alpha, styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
-import { AuthContext } from '../../../context/context';
-import { pink } from '@mui/material/colors';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { AuthContext } from '../context/context';
 
 function Navbar() {
     const [checked, setChecked] = useState(null);
