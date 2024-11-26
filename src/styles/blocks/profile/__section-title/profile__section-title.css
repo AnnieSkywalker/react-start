@@ -1,3 +1,9 @@
+.profile__section-title {
+    text-align: start;
+    width: 60%;
+    font-size: 24px;
+}
+
 @media screen and (max-width: 767px)  {
     .profile__section-title {
     width: 100%;

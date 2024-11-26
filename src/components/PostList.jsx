@@ -1,20 +1,25 @@
 import React from "react";
 import PostItem from "./PostItem";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
+import Section from "./UI/section/Section";
 
 const PostList = function ({posts, title, remove}) {
 
     if(!posts.length) {
         return (
-            <h3 style={{textAlign: 'center'}}>
-                Посты не найдены!
-            </h3>
+            <Section margin={true}>
+                <h2 className="section-title">
+                    Посты не найдены!
+                </h2>
+            </Section>
         )
     }
 
     return(
         <div>
-            <h1 style={{textAlign: 'center'}}>{title}</h1>
+            <h2 className="section-title">
+                {title}
+            </h2>
             <TransitionGroup>
                 {posts.map((post, index) =>
                 <CSSTransition

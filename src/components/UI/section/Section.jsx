@@ -1,10 +1,10 @@
 import React from 'react'
 import cl from './Section.module.css'
 
-function Section({children, margin}) {
+function Section({children, ...props}) {
     const rootClasses = [cl.Section];
 
-    if (margin) {
+    if (props.margin) {
         rootClasses.push([cl.mTop]);
     }
 

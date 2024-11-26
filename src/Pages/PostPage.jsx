@@ -10,12 +10,10 @@ function PostPage() {
 
     const [fetchPostById, isLoading, error] = useFetching(async (id) => {
         const response = await PostService.getById(id);
-        console.log(response);
         setPost(response.data);
     });
 
     useEffect(() => {
-        console.log(params);
         fetchPostById(params.id);
     }, [])
 
