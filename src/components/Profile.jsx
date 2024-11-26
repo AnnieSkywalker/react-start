@@ -13,10 +13,10 @@ function Profile() {
                     <img className="profile__avatar" src={avatar} alt="Аватар" />
                 </div>
                 <div className='profile__description'>
-                    <h2 className="section-title about__section-title">
+                    <h2 className="section-title profile__section-title">
                         Привет, меня зовут Андрей
                     </h2>
-                    <p className="section-subtitle about__section-subtitle">
+                    <p className="section-subtitle profile__section-subtitle">
                         Я Frontend-разработчик. Занимаюсь веб-разработкой с 2019 года. Более подробно обо мне можно узнать перейдя по ссылкам.
                     </p>
                 </div>
