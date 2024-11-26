@@ -1,4 +1,4 @@
-.cards__link {
+.profile__link {
     font-weight: 500;
     font-size: 20px;
     line-height: 140%;
@@ -9,9 +9,14 @@
     gap: 30px;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid #232329;
+    background-color: #0f0f0f;
+    border: 2px solid #232329;
     border-radius: 12px;
     padding: 10px;
     width: 35px;
     height: 35px;
+}
+
+.profile__link:hover {
+    background-color: #232329;
 }

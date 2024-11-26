@@ -1,0 +1,6 @@
+.profile__links{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
