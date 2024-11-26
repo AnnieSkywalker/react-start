@@ -1,0 +1,13 @@
+.project-description__links{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+@media screen and (max-width: 767px)  {
+    .project-description__links {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

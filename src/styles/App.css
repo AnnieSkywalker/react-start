@@ -42,10 +42,15 @@
 @import url(./blocks/profile/__avatar/profile__avatar.css);
 @import url(./blocks/profile/__description/profile__description.css);
 @import url(./blocks/profile/__links/profile__links.css);
-@import url(./blocks/profile/__link/profile__link.css);
-@import url(./blocks/profile/__image/profile__image.css);
 @import url(./blocks/profile/__section-title/profile__section-title.css);
 @import url(./blocks/profile/__section-subtitle/profile__section-subtitle.css);
+
+@import url(./blocks/project-description/project-description.css);
+@import url(./blocks/project-description/__title/project-description__title.css);
+@import url(./blocks/project-description/__subtitle/project-description__subtitle.css);
+@import url(./blocks/project-description/__list/project-description__list.css);
+@import url(./blocks/project-description/__item/project-description__item.css);
+@import url(./blocks/project-description/__links/project-description__links.css);
 
 @import url(./blocks/footer/__copyright/footer__copyright.css);
 @import url(./blocks/footer/__container/footer__container.css);

@@ -1,9 +1,8 @@
 import React from 'react'
 
 import avatar from '../images/avka.png'
-import github from '../images/github.svg';
-import vk from '../images/vkontakte.svg'
-import telegram from '../images/telegram-app.svg'
+import { SocialProfileConfig } from '../utils/constants'
+import SocialBlock from './UI/socialBlock/SocialBlock'
 
 function Profile() {
     return (
@@ -22,15 +21,9 @@ function Profile() {
                 </div>
             </div>
             <div className='profile__links'>
-                <a href="https://github.com/AnnieSkywalker/" className="profile__link" target="_blank" rel="noopener noreferrer">
-                    <img className="profile__image" src={github} alt="Иконка github" />
-                </a>
-                <a href="https://vk.com/spirridonov" className="profile__link" target="_blank" rel="noopener noreferrer">
-                    <img className="profile__image" src={vk} alt="Иконка github" />
-                </a>
-                <a href="https://t.me/spirridonov" className="profile__link" target="_blank" rel="noopener noreferrer">
-                    <img className="profile__image" src={telegram} alt="Иконка github" />
-                </a>
+            {SocialProfileConfig.map((link)=>
+                <SocialBlock href={link.href} target={link.target} rel={link.rel} src={link.src} alt={link.alt}></SocialBlock>
+            )}
             </div>
         </div>
     )

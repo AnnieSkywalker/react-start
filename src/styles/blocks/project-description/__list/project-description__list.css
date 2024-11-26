@@ -1,0 +1,8 @@
+.project-description__list {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style-type:  none;
+    padding: 0;
+}

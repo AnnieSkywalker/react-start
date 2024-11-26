@@ -1,0 +1,12 @@
+.project-description__title {
+    text-align: start;
+    width: 60%;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+    .project-description__title  {
+        width: 100%;
+        text-align: center;
+    }
+}
