@@ -1,4 +1,4 @@
-import Error from "Pages/Error";
+import Error from "./../Pages/Error";
 import About from "./../Pages/About";
 import Login from "./../Pages/Login";
 import PostPage from "./../Pages/PostPage";
