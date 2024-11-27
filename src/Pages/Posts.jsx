@@ -16,6 +16,7 @@ function Posts() {
     const [posts, setPosts] = useState([]);
     const [filter, setFilter] = useState({ sort: '', query: '' });
     const [modal, setModal] = useState(false);
+    const [stubError, setStubError] =useState(true)
     const [totalPages, setTotalPages] = useState(0);
     const [limit, setLimit] = useState(10);
     const [page, setPage] = useState(1);
@@ -55,7 +56,7 @@ function Posts() {
                 <PostFilter filter={filter} setFilter={setFilter}></PostFilter>
             </section>
 
-            {postError && <StubError postError={postError}>!Произошла ошибка:</StubError>}
+            {postError && <StubError postError={postError} visible={stubError} setVisible={setStubError}>!Произошла ошибка:</StubError>}
 
             {isPostsLoading 
                 ? (<div style={{ display: 'flex', justifyContent: 'center', marginTop: 50 }}><Loader /></div>) 

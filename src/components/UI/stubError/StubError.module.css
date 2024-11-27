@@ -1,6 +1,6 @@
 .StubError {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    display: none;
     margin-top: 20px;
     box-sizing: border-box;
     flex-direction: column;
@@ -25,4 +25,18 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.StubError img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.StubError.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
