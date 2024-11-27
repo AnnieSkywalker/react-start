@@ -1,0 +1,24 @@
+@media screen and (min-width: 960px) {
+    html {
+      margin-left: calc(100vw - 100%);
+      margin-right: 0;
+    }
+}
+
+.main-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {
+    grid-row: 1;
+}
+
+main {
+    grid-row: 2;  /* Основное место под солнцем */
+}
+
+footer {
+    grid-row: 3;
+}

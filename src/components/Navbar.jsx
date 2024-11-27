@@ -1,4 +1,3 @@
-import { pink } from '@mui/material/colors';
 import { alpha, styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
 import React, { useContext, useEffect, useState } from 'react';
@@ -24,16 +23,20 @@ function Navbar() {
         setChecked(event.target.checked);
     };
 
-    const PinkSwitch = styled(Switch)(({ theme }) => ({
+    const OrangeSwitch = styled(Switch)(({ theme }) => ({
         '& .MuiSwitch-switchBase.Mui-checked': {
-        color: pink[600],
+        color: '#ff3333',
         '&:hover': {
-            backgroundColor: alpha(pink[600], theme.palette.action.hoverOpacity),
+            backgroundColor: alpha('#e50000', theme.palette.action.hoverOpacity),
         },
         },
         '& .MuiSwitch-switchBase.Mui-checked + .MuiSwitch-track': {
-        backgroundColor: pink[600],
+        backgroundColor: '#999',
         },
+        '& .MuiSwitch-track': {
+            opacity: 1,
+            backgroundColor: '#4c4c4c',
+        }
     }));
   
     const label = { inputProps: { 'aria-label': 'Color switch demo' } };
@@ -43,7 +46,7 @@ function Navbar() {
             <div className='navbar__links'>
                 <Link className='navbar__link' to ='/posts'>posts</Link>
                 <Link className='navbar__link' to ="/about">about</Link>
-                <PinkSwitch 
+                <OrangeSwitch 
                 {...label}
                 checked={checked}
                 onChange={handleChange} />

@@ -16,7 +16,7 @@ function App() {
         }
     }, [])
 
-    return <div>
+    return <div className='main-container'>
             <AuthContext.Provider value = {{
                 isAuth,
                 setIsAuth: setIsAuth
