@@ -1,4 +1,3 @@
-import zIndex from '@mui/material/styles/zIndex'
 import MyInput from '../components/UI/input/MyInput'
 import Section from '../components/UI/section/Section'
 import React from 'react'
@@ -16,12 +15,13 @@ function Login() {
                 </p>
             </Section>
             <Section margin={true}>
-                <div style={{position: 'absolute', width: '100%', height: '100%', backdropFilter: 'blur(5px)'}}></div>
-                <h2 className="section-title">
-                    Регистрация
-                </h2>
-                <MyInput type='text' placeholder='email' disabled ></MyInput>
-                <MyInput type='text' placeholder='password' disabled ></MyInput>
+                <div style={{width: '100%', height: '100%', filter: 'blur(4px)'}}>
+                    <h2 className="section-title">
+                        Регистрация
+                    </h2>
+                    <MyInput type='text' placeholder='email' disabled ></MyInput>
+                    <MyInput type='text' placeholder='password' disabled ></MyInput>
+                </div>
             </Section>
         </div>
     )
