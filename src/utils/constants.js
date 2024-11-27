@@ -29,7 +29,7 @@ export const SocialProfileConfig = [
 
 export const SocialProjectConfig = [
     {
-        href: "https://github.com/AnnieSkywalker/",
+        href: "https://github.com/AnnieSkywalker/react-start",
         target: '_blank',
         src: github,
         alt: 'Иконка github',
